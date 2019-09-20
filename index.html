@@ -21,7 +21,7 @@
 
         <center>
             <h1>Ghanaian Names</h1>
-            <button type="button" onclick="alert('WOW,THIS IS INTERESTING!')">Click Me!</button>
+            <button type="button" onclick="alert('Calculator!')">Click Me!</button>
             <p>This is a web application to determine your year,month and day of month.</p>
             <p>Akan name is a Ghanaian form of naming.You are named according to the week and day you were born</p>
             <p>In here you will be able to figure out your name with the day you were born.</p>
@@ -31,63 +31,22 @@
                       <div class="col-12">
                           <div class="search-close-btn" id="closeBtn">
                             <i class="pe-7s-close-circle" aria-hidden="true"></i>
-                          </div>
-                          <form action="#" method="get">
-                            <p>Please select your Birth Year</p>
-                            <input type="search" name="Akan-birth Year" id="Year" placeholder="Enter Birth Year...">
-                            <input type="submit" class="d-none" value="submit">
-                          </form>
+                            <form name="Akan-names" onsubmit="validate()">
+                                <label for="date">Date</label>
+                                <input class="date" name="date" value=""> <br>
+                                <label for="month" >Month</label>
+                                <input class="month" name="month" value=""><br>
+                                <label for="year">Year</label>
+                                <input class="year" name="year" value=""><br>
+                                <button class="block" type="button" value="submit">Submit your answer</button>
+
+                            </form>
                           </div>
                       </div>
                   </div>
               </div>
               
-              <div class="Akan-name-search-form d-flex align-items-center">
-                    <div class="container">
-                       <div class="row">
-                          <div class="col-12">
-                              <div class="search-close-btn" id="closeBtn">
-                                <i class="pe-7s-close-circle" aria-hidden="true"></i>
-                              </div>
-                              <form action="#" method="get">
-                                <p>Please select your Birth Month</p>
-                                <input type="search" name="Akan-Birth Month" id="Month" placeholder="Enter Birth Month...">
-                                <input type="submit" class="d-none" value="submit">
-                              </form>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="Akan-name-search-form d-flex align-items-center">
-                        <div class="container">
-                           <div class="row">
-                              <div class="col-12">
-                                  <div class="search-close-btn" id="closeBtn">
-                                    <i class="pe-7s-close-circle" aria-hidden="true"></i>
-                                  </div>
-                                  <form action="#" method="get">
-                                    <p>Please select your Birth Date</p>
-                                    <input type="search" name="Akan-Birth Date" id="Date" placeholder="Enter Birth Date...">
-                                    <input type="submit" class="d-none" value="submit">
-                                  </form>
-                                  </div>
-                              </div>
-                          </div>
-                  </div>
-
-                  <div class="Akan-name-search-form d-flex align-items center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="search-close-btn" id="closeBtn">
-                                    <i class="pe-7s-close-circle" aria-hidden="true"></i>
-                                </div>
-                                <form action="#" method="get">
-                                <p>Please select your gender:</p>
-                                <input type="radio" name="gender" value="male"> Male<br>
-                                <input type="radio" name="gender" value="female"> Female<br>
-                                </form> 
+              
                             </div>
                         </div>
                   </div>
